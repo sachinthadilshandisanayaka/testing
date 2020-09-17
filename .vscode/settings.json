@@ -1,0 +1,9 @@
+{
+    "dart.flutterCustomEmulators": [
+    
+    ],
+    "git.enableCommitSigning": true,
+    "git.fetchOnPull": true,
+    "git.enableSmartCommit": true,
+    "emulator.androidColdBoot": true
+}
