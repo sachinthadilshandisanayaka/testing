@@ -23,7 +23,11 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Image.asset('assets/photo-03.jpeg'),
+        child: Icon(
+          Icons.airplanemode_active,
+          color: Colors.orange,
+          size: 30.0,
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
