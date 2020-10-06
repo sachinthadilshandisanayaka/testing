@@ -22,13 +22,35 @@ class Home extends StatelessWidget {
         backgroundColor: Color.fromRGBO(0, 206, 201, 1.0),
         centerTitle: true,
       ),
-      body: Center(
-        child: Container(
-          margin: EdgeInsets.symmetric(horizontal: 40.0, vertical: 40.0),
-          padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
-          color: Colors.red[400],
-          child: Text('Scan me'),
-        ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly, // ->
+        crossAxisAlignment: CrossAxisAlignment.center, // |
+        children: <Widget>[
+          FlatButton(
+            // cant use FloatingButton, no access to 'child'
+            onPressed: () {},
+            color: Colors.blueAccent,
+            child: Text('one'),
+          ),
+          FlatButton(
+            // cant use FloatingButton, no access to 'child'
+            onPressed: () {},
+            color: Colors.blueAccent,
+            child: Text('two'),
+          ),
+          FlatButton(
+            // cant use FloatingButton, no access to 'child'
+            onPressed: () {},
+            color: Colors.blueAccent,
+            child: Text('three'),
+          ),
+          FlatButton(
+            // cant use FloatingButton, no access to 'child'
+            onPressed: () {},
+            color: Colors.blueAccent,
+            child: Text('four'),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
