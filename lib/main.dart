@@ -23,10 +23,10 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Icon(
-          Icons.airplanemode_active,
-          color: Colors.orange,
-          size: 30.0,
+        child: RaisedButton(
+          onPressed: () {},
+          child: Text("scan me"),
+          color: Colors.blueAccent,
         ),
       ),
       floatingActionButton: FloatingActionButton(
