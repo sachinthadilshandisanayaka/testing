@@ -23,10 +23,15 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: RaisedButton(
-          onPressed: () {},
-          child: Text("scan me"),
-          color: Colors.blueAccent,
+        child: RaisedButton.icon(
+          onPressed: () {
+            print('scannig your face'); // display in console
+          },
+          icon: Icon(
+            Icons.scanner,
+          ),
+          label: Text('Scan me'),
+          color: Color.fromRGBO(214, 48, 49, 1.0),
         ),
       ),
       floatingActionButton: FloatingActionButton(
