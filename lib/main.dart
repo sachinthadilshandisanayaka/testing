@@ -26,36 +26,26 @@ class Home extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly, // ->
         crossAxisAlignment: CrossAxisAlignment.center, // |
         children: <Widget>[
-          Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Container(
-                  child: Text('hello'),
-                ),
-                Container(
-                  child: Text('bye'),
-                ),
-              ],
+          Expanded(
+            child: Container(
+              color: Colors.cyan,
+              padding: EdgeInsets.all(20.0),
+              child: Text('a'),
             ),
           ),
-          FlatButton(
-            // cant use FloatingButton, no access to 'child'
-            onPressed: () {},
-            color: Colors.blueAccent,
-            child: Text('two'),
+          Expanded(
+            child: Container(
+              color: Colors.yellowAccent,
+              padding: EdgeInsets.all(20.0),
+              child: Text('b'),
+            ),
           ),
-          FlatButton(
-            // cant use FloatingButton, no access to 'child'
-            onPressed: () {},
-            color: Colors.blueAccent,
-            child: Text('one'),
-          ),
-          FlatButton(
-            // cant use FloatingButton, no access to 'child'
-            onPressed: () {},
-            color: Colors.blueAccent,
-            child: Text('three'),
+          Expanded(
+            child: Container(
+              color: Colors.tealAccent,
+              padding: EdgeInsets.all(20.0),
+              child: Text('c'),
+            ),
           ),
         ],
       ),
