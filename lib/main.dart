@@ -27,6 +27,7 @@ class Home extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center, // |
         children: <Widget>[
           Expanded(
+            flex: 3,
             child: Container(
               color: Colors.cyan,
               padding: EdgeInsets.all(20.0),
@@ -34,6 +35,7 @@ class Home extends StatelessWidget {
             ),
           ),
           Expanded(
+            flex: 2,
             child: Container(
               color: Colors.yellowAccent,
               padding: EdgeInsets.all(20.0),
@@ -41,6 +43,7 @@ class Home extends StatelessWidget {
             ),
           ),
           Expanded(
+            flex: 1,
             child: Container(
               color: Colors.tealAccent,
               padding: EdgeInsets.all(20.0),
