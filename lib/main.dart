@@ -10,6 +10,22 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     // hot reload, we no need to reload the code, auto reload it
     // because of build(BuildContext)
+    return MaterialApp(
+      title: 'Natigation Testing',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: FirstActivity(),
+      
+    );
+  }
+}
+
+class FirstActivity extends StatelessWidget {
+  const FirstActivity({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
