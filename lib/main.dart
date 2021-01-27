@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project02/second.dart';
 
 void main() => runApp(MaterialApp(
       home: Home(),
@@ -8,11 +9,11 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // hot reload, we no need to reload the code, auto reload it
-    // because of buil(BuildContext)
+    // because of build(BuildContext)
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Face Scanner',
+          'Navigation Text',
           style: TextStyle(
             fontFamily: 'Nunito',
             fontWeight: FontWeight.bold,
@@ -28,18 +29,27 @@ class Home extends StatelessWidget {
         children: <Widget>[
           Expanded(
             flex: 3,
-            child: Container(
+            child: RaisedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        SecondActivity(data: "Check passing value"),
+                  ),
+                );
+              },
+              child: Text('Go to Second'),
               color: Colors.cyan,
               padding: EdgeInsets.all(20.0),
-              child: Text('a'),
             ),
           ),
           Expanded(
             flex: 2,
-            child: Container(
+            child: RaisedButton(
+              onPressed: () {},
               color: Colors.yellowAccent,
               padding: EdgeInsets.all(20.0),
-              child: Text('b'),
+              child: Text('Go to Third'),
             ),
           ),
           Expanded(
