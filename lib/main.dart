@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project02/second.dart';
+import 'package:project02/routers/route_genarator.dart';
 
 void main() => runApp(MaterialApp(
       home: Home(),
@@ -15,8 +15,8 @@ class Home extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: FirstActivity(),
-      
+      initialRoute: '/',
+      onGenerateRoute: RouteGenerator.generateRoute,
     );
   }
 }
@@ -40,18 +40,16 @@ class FirstActivity extends StatelessWidget {
         centerTitle: true,
       ),
       body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly, // ->
-        crossAxisAlignment: CrossAxisAlignment.center, // |
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Expanded(
             flex: 3,
             child: RaisedButton(
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) =>
-                        SecondActivity(data: "Check passing value"),
-                  ),
+                Navigator.of(context).pushNamed(
+                  '/second',
+                  arguments: 'this is from first',
                 );
               },
               child: Text('Go to Second'),
@@ -62,7 +60,9 @@ class FirstActivity extends StatelessWidget {
           Expanded(
             flex: 2,
             child: RaisedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed('/third');
+              },
               color: Colors.yellowAccent,
               padding: EdgeInsets.all(20.0),
               child: Text('Go to Third'),

@@ -10,8 +10,13 @@ class ThirdActivity extends StatefulWidget {
 class _ThirdActivityState extends State<ThirdActivity> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('Third Activity'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Third Page'),
+      ),
+      body: Center(
+        child: Text('Hello there!'),
+      ),
     );
   }
 }
