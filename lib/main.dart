@@ -39,12 +39,11 @@ class FirstActivity extends StatelessWidget {
         backgroundColor: Color.fromRGBO(0, 206, 201, 1.0),
         centerTitle: true,
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Expanded(
-            flex: 3,
+            flex: 1,
             child: RaisedButton(
               onPressed: () {
                 Navigator.of(context).pushNamed(
@@ -58,7 +57,7 @@ class FirstActivity extends StatelessWidget {
             ),
           ),
           Expanded(
-            flex: 2,
+            flex: 1,
             child: RaisedButton(
               onPressed: () {
                 Navigator.of(context).pushNamed('/third');
