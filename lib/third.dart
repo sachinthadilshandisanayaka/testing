@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:project02/tabs/third/third_tabFour.dart';
+import 'package:project02/tabs/third/third_tabOne.dart';
+import 'package:project02/tabs/third/third_tabThree.dart';
+import 'package:project02/tabs/third/third_tabTwo.dart';
 
 class ThirdActivity extends StatefulWidget {
   ThirdActivity({Key key}) : super(key: key);
@@ -113,54 +117,54 @@ class _ThirdActivityState extends State<ThirdActivity>
   }
 }
 
-class OneTab extends StatefulWidget {
-  OneTab({Key key}) : super(key: key);
+// class OneTab extends StatefulWidget {
+//   OneTab({Key key}) : super(key: key);
 
-  @override
-  _OneTabState createState() => _OneTabState();
-}
+//   @override
+//   _OneTabState createState() => _OneTabState();
+// }
 
-class _OneTabState extends State<OneTab> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Text('Tab One'),
-    );
-  }
-}
+// class _OneTabState extends State<OneTab> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//       child: Text('Tab One'),
+//     );
+//   }
+// }
 
-class TwoTab extends StatefulWidget {
-  TwoTab({Key key}) : super(key: key);
+// class TwoTab extends StatefulWidget {
+//   TwoTab({Key key}) : super(key: key);
 
-  @override
-  _TwoTabState createState() => _TwoTabState();
-}
+//   @override
+//   _TwoTabState createState() => _TwoTabState();
+// }
 
-class _TwoTabState extends State<TwoTab> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Text('Second Tab'),
-    );
-  }
-}
+// class _TwoTabState extends State<TwoTab> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//       child: Text('Second Tab'),
+//     );
+//   }
+// }
 
-class ThirdTab extends StatelessWidget {
-  const ThirdTab({Key key}) : super(key: key);
+// class ThirdTab extends StatelessWidget {
+//   const ThirdTab({Key key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Text('Third Tab'),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//       child: Text('Third Tab'),
+//     );
+//   }
+// }
 
-class FouthTab extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Text('Fouth Tab'),
-    );
-  }
-}
+// class FouthTab extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//       child: Text('Fouth Tab'),
+//     );
+//   }
+// }
