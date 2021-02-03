@@ -48,10 +48,10 @@ class FirstActivity extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).pushNamed(
                   '/second',
-                  arguments: 'this is from first',
+                  arguments: 'Google Map',
                 );
               },
-              child: Text('Go to Second'),
+              child: Text('Map'),
               color: Colors.cyan,
               padding: EdgeInsets.all(20.0),
             ),
