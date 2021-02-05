@@ -4,7 +4,7 @@ import 'package:project02/second.dart';
 import 'package:project02/third.dart';
 
 class RouteGenerator {
-  static Route<dynamic> generateRoute(RouteSettings settings) {
+  static Route<dynamic> gener  ateRoute(RouteSettings settings) {
     final args = settings.arguments;
     switch (settings.name) {
       case '/':
