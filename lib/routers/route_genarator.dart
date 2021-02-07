@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:project02/main.dart';
-import 'package:project02/second.dart';
-import 'package:project02/third.dart';
+import 'package:project02/activities/main.dart';
+import 'package:project02/activities/second.dart';
+import 'package:project02/activities/third.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
